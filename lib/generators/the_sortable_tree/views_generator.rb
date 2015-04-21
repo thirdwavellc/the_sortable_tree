@@ -42,6 +42,8 @@ BANNER
           copy_file "../helpers/the_sortable_tree_helper.rb", "app/helpers/the_sortable_tree_helper.rb"
         elsif param_name == 'assets'
           directory "../assets/javascripts", "app/assets/javascripts"
+        elsif param_name == 'stylesheets'
+          directory "../assets/stylesheets", "app/assets/stylesheets/the_sortable_tree_stylesheets"
         else
           puts "Wrong params - use only [assets | tree | sortable] values"
         end
